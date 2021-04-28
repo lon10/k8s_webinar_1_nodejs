@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kube-bar-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kube-bar-app
-          image: ssporyshev/bar:v2
+          image: bar:0.1
           ports:
           - containerPort: 3002
             protocol: TCP

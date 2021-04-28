@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kube-foo-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kube-foo-app
-          image: ssporyshev/foo:v2
+          image: foo:0.1
           ports:
           - containerPort: 3001
             protocol: TCP

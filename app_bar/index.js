@@ -6,11 +6,6 @@ app.get('/', (req, res) => {
     res.send('hello from bar <br/>' + new Date());
 });
 
-app.get('/asd', (req, res) => {
-    res.send('bar asd');
-});
-
-
 app.listen('3002', () => {
     console.log('listening port 3002');
 });
